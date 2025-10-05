@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPack Web Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>🌎 TravelPack Web Manager</h1>
+    <nav>
+      <a href="/">Inicio</a>
+      <div id="auth-status">
+        <!-- Se llenará con JS -->
+        <a href="/login.html">Iniciar Sesión</a>
+        <a href="/signup.html">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <main>
+    <h2>Paquetes Turísticos</h2>
+    <div id="paquetes" class="paquetes-container">
+      <!-- Aquí se insertarán las tarjetas con JS -->
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 TravelPack - Turismo en el Tolima</p>
+  </footer>
+
+  <!-- Stripe.js y tu clave publicable -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>const stripe = Stripe('pk_test_51SEir3JWPRe6gQo5oGMVrdK1qvDNR5KWqBrQS8NjSNUkyVbO7Gac8lXdrukrCbYqqAIT6thrphaLLcQj5Hx2VEpt00JIqRDW5Y');</script>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

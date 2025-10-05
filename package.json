@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "node ./TravelPack-Web/TravelPack-Web/backend/server.js",
+    "dev": "nodemon --cwd ./TravelPack-Web/TravelPack-Web/backend server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.58.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
